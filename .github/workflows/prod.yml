@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - main
+      - HEAD
 
 jobs:
   build:
@@ -16,6 +16,7 @@ jobs:
           heroku_app_name: "ocr-space" #Must be unique in Herok
           heroku_email: "saurabhu154@gmail.com"
           usedocker: true
+
 
           #       - run: |
           # heroku container:login
